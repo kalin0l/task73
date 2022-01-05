@@ -8,6 +8,7 @@ function App() {
       const newState = prevState + 1;
       return newState;
     })
+    document.title = `Counter(${counter})`
   },[])
   return (
     <div className="App">
@@ -19,7 +20,7 @@ function App() {
       </section>
       <div className="container is-fullhd">
         <div className="notification">
-          Edit the <code>./src</code> folder to add components.
+          <button onClick={() => setCounter(counter + 1)}>text</button>
         </div>
       </div>
     </div>
